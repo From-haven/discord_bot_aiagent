@@ -6,7 +6,24 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 import os
 
-CONFIG_PATH = "config.json"
+DEFAULT_CONFIG = {
+    "channel_id": "PUT_CHANNEL_ID_HERE",
+    "start_date": "2026-06-15",
+    "start_week": 1,
+    "admin_ids": [],
+    "guild_id": None,
+    "tasks": {"default": []}
+}
+
+if not os.path.exists(CONFIG_PATH):
+    with open(CONFIG_PATH, "w", encoding="utf-8") as f:
+        json.dump(DEFAULT_CONFIG, f, ensure_ascii=False, indent=2)
+
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    config = json.load(f)
+
+
+CONFIG_PATH = os.environ.get("CONFIG_PATH", "config.json")
 
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     config = json.load(f)
