@@ -4,13 +4,14 @@ import discord
 from discord.ext import commands
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
+import os
 
 CONFIG_PATH = "config.json"
 
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     config = json.load(f)
 
-TOKEN = config["token"]
+TOKEN = os.environ.get("DISCORD_TOKEN")
 CHANNEL_ID = int(config["channel_id"])
 START_DATE = datetime.datetime.strptime(config["start_date"], "%Y-%m-%d").date()
 START_WEEK = config["start_week"]
@@ -146,6 +147,5 @@ async def remove_task(ctx, week: int, index: int):
     config["tasks"][str(week)] = tasks
     save_config()
     await ctx.send(f"🗑️ Đã xoá: {removed}")
-
 
 bot.run(TOKEN)
