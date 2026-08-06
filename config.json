@@ -1,0 +1,18 @@
+{
+  "start_date": "2026-06-15",
+  "start_week": 1,
+  "tasks": {
+    "8": [
+      "Nộp bài tập lớn OOP",
+      "Chuẩn bị thuyết trình",
+      "abcxyz"
+    ],
+    "9": [
+      "Ôn tập giữa kỳ",
+      "Làm bài Lab 4"
+    ],
+    "default": [
+      "Cập nhật tiến độ tuần mới"
+    ]
+  }
+}
