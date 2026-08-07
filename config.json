@@ -1,13 +1,11 @@
 {
+  "DISCORD_TOKEN": "MTUzNDkzNjE4NzkxMzg5NjAyNg.GdgRKq.gB_dHyIwPYCyEfsMyaqk81ILzQLyMDF75l57LU",
+  "guild_id": 1514482205563420693,
   "channel_id": 1514482206482104476,
   "start_date": "2026-06-15",
   "start_week": 1,
   "tasks": {
-    "8": [
-      "Nộp bài tập lớn OOP",
-      "Chuẩn bị thuyết trình",
-      "abcxyz"
-    ],
+    "8": [],
     "9": [
       "Ôn tập giữa kỳ",
       "Làm bài Lab 4"
