@@ -21,8 +21,6 @@ if not TOKEN:
 CONFIG_PATH = os.environ.get("CONFIG_PATH", "config.json")
 
 DEFAULT_CONFIG = {
-  "guild_id": 1514482205563420693,
-  "channel_id": 1514482206482104476,
   "start_date": "2026-06-15",
   "start_week": 1,
   "tasks": {
