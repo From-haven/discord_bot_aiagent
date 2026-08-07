@@ -21,14 +21,22 @@ if not TOKEN:
 CONFIG_PATH = os.environ.get("CONFIG_PATH", "config.json")
 
 DEFAULT_CONFIG = {
-    "channel_id": "PUT_CHANNEL_ID_HERE",
-    "start_date": "2026-06-15",
-    "start_week": 1,
-    "admin_ids": [],
-    "guild_id": None,
-    "tasks": {
-        "default": ["Cập nhật tiến độ tuần mới"]
-    }
+  "guild_id": 1514482205563420693,
+  "channel_id": 1514482206482104476,
+  "start_date": "2026-06-15",
+  "start_week": 1,
+  "tasks": {
+    "8": [],
+    "9": [
+      "Ôn tập giữa kỳ",
+      "Làm bài Lab 4"
+    ],
+    "default": [
+      "Nếu thông báo này hiện lên, có lẽ mọi người cũng đã làm xong đồ án rùi",
+      "có thể mọi người đã làm xong/ thi xong hy vọng PROJECT OOP đã hoàn thành xong đồ án rùi",
+      "chúc mọi người có một tuần mới tuần mới tốt lành ^^"
+    ]
+  }
 }
 
 # Tự tạo file config mặc định nếu chưa tồn tại (ví dụ lần đầu chạy trên volume rỗng)
