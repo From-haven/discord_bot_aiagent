@@ -56,11 +56,11 @@ if os.environ.get("GUILD_ID"):
     config["guild_id"] = os.environ["GUILD_ID"]
 
 # TOKEN = config["DISCORD_TOKEN"]
-CHANNEL_ID = int(config["channel_id"])
+# CHANNEL_ID = int(config["channel_id"])
 START_DATE = datetime.datetime.strptime(config["start_date"], "%Y-%m-%d").date()
 START_WEEK = config["start_week"]
 ADMIN_IDS = set(config.get("admin_ids", []))
-GUILD_ID = config.get("guild_id")
+# GUILD_ID = config.get("guild_id")
 
 intents = discord.Intents.default()
 intents.message_content = True
